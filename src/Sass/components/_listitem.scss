@@ -1,0 +1,130 @@
+.list-item {
+  // margin-right: 1rem;
+  // margin-top: 1rem;
+  width: 288px;
+  height: 28px;
+  position: relative;
+  background: $element-primary;
+  border-radius: 8px;
+  .list-item__title {
+    position: absolute;
+    left: 12px;
+    right: 116px;
+    top: 12px;
+    bottom: 12px;
+    p {
+      margin: 0;
+      padding: 0;
+      font-size: 16px;
+      line-height: 140%;
+      color: $text-primary;
+    }
+  }
+  .list-item__subtitle {
+    position: absolute;
+    left: 12px;
+    right: 116px;
+    bottom: 12px;
+    top: 34px;
+    p {
+      margin: 0;
+      padding: 0;
+      font-size: 14px;
+      line-height: 140%;
+      color: $text-secondary;
+    }
+  }
+  .list-item__icon svg {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 12px;
+    top: calc(50% - 20px / 2);
+  }
+  .list-item__value {
+    position: absolute;
+    left: 172px;
+    right: 36px;
+    top: 12px;
+    bottom: 12px;
+    p {
+      margin: 0;
+      padding: 0;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 140%;
+      text-align: right;
+      color: $text-primary;
+    }
+  }
+  .list-item__arrow {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    right: 12px;
+    top: calc(50% - 16px / 2);
+    svg {
+      left: 8.33%;
+      right: 8.33%;
+      top: 8.33%;
+      bottom: 8.33%;
+    }
+  }
+  &.tiny-item {
+    .list-item__title {
+      left: 12px;
+      top: 4px;
+      bottom: 4px;
+    }
+    .list-item__value {
+      top: 4px;
+      bottom: 4px;
+    }
+    p {
+      color: $text-secondary;
+      font-size: 14px;
+    }
+  }
+  &.sub-item {
+    height: 38px;
+    .list-item__title {
+      left: 12px;
+      top: 8px;
+      bottom: 8px;
+    }
+    .list-item__value {
+      top: 8px;
+    }
+  }
+
+  &.default {
+    height: 46px;
+  }
+  &.subtitle {
+    height: 66px;
+    .list-item__title {
+      bottom: 32px;
+    }
+    .list-item__value {
+      top: 22px;
+    }
+  }
+  &.icon {
+    height: 46px;
+    .list-item__title {
+      left: 40px;
+      right: 112px;
+      top: 12px;
+      bottom: 12px;
+    }
+    .list-item__subtitle {
+      height: 20px;
+      left: 40px;
+      right: 124px;
+      bottom: 12px;
+    }
+    &.subtitle {
+      height: 66px;
+    }
+  }
+}

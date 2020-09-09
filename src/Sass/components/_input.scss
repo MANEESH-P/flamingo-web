@@ -1,0 +1,86 @@
+.input-container {
+  position: relative;
+  margin-right: 1.5rem;
+  margin-bottom: 1.5rem;
+  height: 38px;
+  width: 288px;
+}
+
+.input {
+  background: $element-primary;
+  border: 1px solid $element-tertiary;
+  box-sizing: border-box;
+  border-radius: 24px;
+  height: 38px;
+  width: 100%;
+  outline: none;
+}
+
+input[type="text"],
+input[type="password"] {
+  text-indent: 16px;
+}
+
+input[type="date"] {
+  text-indent: 8px;
+  color: $text-secondary;
+}
+
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator {
+  display: none;
+  -webkit-appearance: none;
+}
+
+.input-container svg {
+  position: absolute;
+  right: 16px;
+  top: calc(50% - 20px / 2);
+}
+
+::placeholder {
+  //   font-family: "Open Sans";
+  font-size: 16px;
+  color: $text-secondary;
+}
+
+.input--normal {
+  border: 1px solid $element-tertiary;
+}
+
+.input--error {
+  // border: 1px solid $element-error;
+  @include error;
+}
+
+.input--success {
+  // border: 1px solid $element-success;
+  @include success;
+}
+
+// .input--hover {
+//   border: 1px solid $element-secondary;
+// }
+
+// .input--active {
+//   border: 2px solid $element-secondary;
+// }
+
+// .input--disabled {
+//   background: $element-inactive;
+// }
+
+input.hover {
+  // border: 1px solid $element-secondary;
+  @include hover;
+}
+
+.active {
+  // border: 2px solid $element-secondary;
+  @include active;
+}
+
+.disabled {
+  // background: $element-inactive;
+  @include disabled;
+}

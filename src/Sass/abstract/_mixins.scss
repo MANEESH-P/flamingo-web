@@ -1,0 +1,113 @@
+@mixin hover {
+  border: 1px solid $element-secondary;
+}
+
+@mixin active {
+  border: 2px solid $element-secondary;
+}
+
+@mixin disabled {
+  background: $element-inactive;
+}
+
+@mixin success {
+  border: 1px solid $element-success;
+}
+
+@mixin error {
+  border: 1px solid $element-error;
+}
+
+@mixin avatar--size($height, $width) {
+  height: $height;
+  width: $width;
+}
+
+@mixin m-x-list {
+  @for $i from 1 through 64 {
+    .m-#{$i} {
+      margin: ($i/4) + rem;
+    }
+  }
+}
+
+@mixin mr-x-list {
+  @for $i from 1 through 64 {
+    .mr-#{$i} {
+      margin-right: ($i/4) + rem;
+    }
+  }
+}
+
+@mixin ml-x-list {
+  @for $i from 1 through 64 {
+    .ml-#{$i} {
+      margin-left: ($i/4) + rem;
+    }
+  }
+}
+
+@mixin mt-x-list {
+  @for $i from 1 through 64 {
+    .mt-#{$i} {
+      margin-top: ($i/4) + rem;
+    }
+  }
+}
+
+@mixin mb-x-list {
+  @for $i from 1 through 64 {
+    .mb-#{$i} {
+      margin-bottom: ($i/4) + rem;
+    }
+  }
+}
+
+@mixin p-x-list {
+  @for $i from 1 through 64 {
+    .p-#{$i} {
+      padding: ($i/4) + rem;
+    }
+  }
+}
+
+@mixin pr-x-list {
+  @for $i from 1 through 64 {
+    .pr-#{$i} {
+      padding-right: ($i/4) + rem;
+    }
+  }
+}
+
+@mixin pl-x-list {
+  @for $i from 1 through 64 {
+    .pl-#{$i} {
+      padding-left: ($i/4) + rem;
+    }
+  }
+}
+
+@mixin pt-x-list {
+  @for $i from 1 through 64 {
+    .pt-#{$i} {
+      padding-top: ($i/4) + rem;
+    }
+  }
+}
+
+@mixin pb-x-list {
+  @for $i from 1 through 64 {
+    .pb-#{$i} {
+      padding-bottom: ($i/4) + rem;
+    }
+  }
+}
+
+@mixin box-shadow(
+  $x-axis: 0,
+  $y-axis: 1px,
+  $blur: 2px,
+  $color: rgba(25, 1, 52, 0.12)
+) {
+  box-shadow: $x-axis $y-axis $blur $color;
+}

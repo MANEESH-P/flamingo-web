@@ -1,0 +1,48 @@
+.avatar {
+  border-radius: 50%;
+  vertical-align: middle;
+}
+
+.avatar--xs {
+  img,
+  svg {
+    @include avatar--size(8px, 8px);
+  }
+}
+
+.avatar--s {
+  img,
+  svg {
+    @include avatar--size(16px, 16px);
+  }
+}
+.avatar--m {
+  img,
+  svg {
+    @include avatar--size(32px, 32px);
+  }
+}
+.avatar--l {
+  img,
+  svg {
+    @include avatar--size(48px, 48px);
+  }
+}
+.avatar--xl {
+  img,
+  svg {
+    @include avatar--size(64px, 64px);
+  }
+}
+.avatar--xxl {
+  img,
+  svg {
+    @include avatar--size(80px, 80px);
+  }
+}
+.avatar--xxxl {
+  img,
+  svg {
+    @include avatar--size(96px, 96px);
+  }
+}

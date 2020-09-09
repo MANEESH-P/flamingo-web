@@ -1,0 +1,59 @@
+.foundation-layout {
+  display: flex;
+  min-height: 100vh;
+  .foundations {
+    // flex-grow: 4;
+    width: 80vw;
+    background: #f0f3f8;
+  }
+}
+.nav {
+  //   flex-grow: 1;
+  width: 20vw;
+  display: flex;
+  justify-content: center;
+  margin-top: 6rem;
+  h4 {
+    font-weight: bold;
+  }
+}
+
+.brand,
+.ui-text,
+.ui-element,
+.typography,
+.shadows {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.typography {
+  text-align: center;
+
+  .misc {
+    flex-grow: 4;
+    .bold {
+      font-weight: bold;
+    }
+  }
+}
+
+.shadows div {
+  width: 68px;
+  height: 68px;
+  background: $element-primary;
+}
+
+.shadow--b-0 {
+  box-shadow: inset 0px -1px 0px #eaeaea;
+}
+
+.shadow--t-0 {
+  box-shadow: inset 0px 1px 0px #eaeaea;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

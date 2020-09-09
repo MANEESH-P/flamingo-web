@@ -13,6 +13,16 @@ import Avatar from "../../Components/Avatar/Avatar";
 import ListItem from "../../Components/ListItem/ListItem";
 import Navbar from "../../Components/Navbar/Navbar";
 
+const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop - 32);
+
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+
 export default function ElementsLayout() {
   const buttonsRef = useRef(null);
   const inputsRef = useRef(null);
@@ -50,6 +60,109 @@ export default function ElementsLayout() {
           avatarRef,
         ]}
       />
+
+      <span className="hamburger" onClick={openNav}>
+        <svg
+          height="16px"
+          viewBox="0 -53 384 384"
+          width="16px"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path d="m368 154.667969h-352c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0" />
+          <path d="m368 32h-352c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0" />
+          <path d="m368 277.332031h-352c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0" />
+        </svg>
+      </span>
+
+      <div id="myNav" class="overlay">
+        <p class="closebtn" onClick={closeNav}>
+          &times;
+        </p>
+        <div class="overlay-content">
+          <p
+            onClick={() => {
+              scrollToRef(buttonsRef);
+              closeNav();
+            }}
+            href="#"
+          >
+            01.Buttons
+          </p>
+          <p
+            onClick={() => {
+              scrollToRef(inputsRef);
+              closeNav();
+            }}
+            href="#"
+          >
+            02.Inputs
+          </p>
+          <p
+            onClick={() => {
+              scrollToRef(selectRef);
+              closeNav();
+            }}
+            href="#"
+          >
+            03.Select
+          </p>
+          <p
+            onClick={() => {
+              scrollToRef(textareaRef);
+              closeNav();
+            }}
+            href="#"
+          >
+            04.Textarea
+          </p>
+          <p
+            onClick={() => {
+              scrollToRef(checkboxRef);
+              closeNav();
+            }}
+            href="#"
+          >
+            05.Checkbox
+          </p>
+          <p
+            onClick={() => {
+              scrollToRef(radioRef);
+              closeNav();
+            }}
+            href="#"
+          >
+            06.Radio Buttons
+          </p>
+          <p
+            onClick={() => {
+              scrollToRef(toggleRef);
+              closeNav();
+            }}
+            href="#"
+          >
+            07.Toggles
+          </p>
+          <p
+            onClick={() => {
+              scrollToRef(listitemRef);
+              closeNav();
+            }}
+            href="#"
+          >
+            08.List Items
+          </p>
+
+          <p
+            onClick={() => {
+              scrollToRef(avatarRef);
+              closeNav();
+            }}
+            href="#"
+          >
+            09.Avatars
+          </p>
+        </div>
+      </div>
 
       <div className="components pl-12 pt-8 pb-8 pr-8">
         <div>
@@ -219,8 +332,10 @@ export default function ElementsLayout() {
             </div>
           </div>
         </div>
-        <h2 className="mb-4">Textarea</h2>
-        <div ref={textareaRef} className="container mb-8">
+        <h2 ref={textareaRef} className="mb-4">
+          Textarea
+        </h2>
+        <div className="container mb-8">
           <div className="textarea-types">
             <h3 className="mb-2">Types</h3>
             <div className="textareas">

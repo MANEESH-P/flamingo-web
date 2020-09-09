@@ -181,27 +181,27 @@ export default function ElementsLayout() {
         <h2 ref={buttonsRef} className="mb-4">
           Buttons
         </h2>
-        <div className="container mb-8">
-          <div className="primary-buttons mr-1">
+        <div className="container">
+          <div className="primary-buttons mr-1 mb-8">
             <h3 className="mb-2">Primary</h3>
             <Button variant="primary" type="default" label="Label"></Button>
             <Button variant="primary" type="outline" label="Label"></Button>
             <Button variant="primary" type="minimal" label="Label"></Button>
           </div>
-          <div className="secondary-buttons mr-1">
+          <div className="secondary-buttons mr-1 mb-8">
             <h3 className="mb-2">Secondary</h3>
             <Button variant="secondary" type="default" label="Label"></Button>
             <Button variant="secondary" type="outline" label="Label"></Button>
             <Button variant="secondary" type="minimal" label="Label"></Button>
           </div>
-          <div className="icon-buttons mr-1">
+          <div className="icon-buttons mr-1 mb-8">
             <h3 className="mb-2">Icons</h3>
             <Button variant="icon" label={<Icon />}></Button>
           </div>
         </div>
         <h3 className="mb-4">States</h3>
-        <div className="container mb-8">
-          <div className="primary-button">
+        <div className="container ">
+          <div className="primary-button mb-8">
             <h3 className="mb-2">Primary</h3>
             <div className="buttons">
               <Button
@@ -226,7 +226,7 @@ export default function ElementsLayout() {
               ></Button>
             </div>
           </div>
-          <div className="secondary-button">
+          <div className="secondary-button mb-8">
             <h3 className="mb-2">Secondary</h3>
             <div className="buttons">
               <Button
@@ -251,15 +251,15 @@ export default function ElementsLayout() {
               ></Button>
             </div>
           </div>
-          <div className="success">
+          <div className="success mb-8">
             <h3 className="mb-2">Success</h3>
             <Button variant="success" type="default" label="Label"></Button>
           </div>
-          <div className="Error">
+          <div className="Error mb-8">
             <h3 className="mb-2">Error</h3>
             <Button variant="error" type="default" label="Label"></Button>
           </div>
-          <div className="Disable">
+          <div className="Disable mb-8">
             <h3 className="mb-2">Disable</h3>
             <Button variant="disabled" type="default" label="Label"></Button>
           </div>
@@ -349,8 +349,8 @@ export default function ElementsLayout() {
           </div>
         </div>
         {/* <div className="container"> */}
-        <div ref={checkboxRef} className="inner-container mb-8">
-          <div className="checkbox-types">
+        <div ref={checkboxRef} className="inner-container ">
+          <div className="checkbox-types mb-8">
             <h3>Checkboxes</h3>
             <Checkbox variant="normal" label="checkbox" />
             <Checkbox variant="hover" label="hover" />
@@ -374,7 +374,7 @@ export default function ElementsLayout() {
               indeterminate={true}
             />
           </div>
-          <div ref={radioRef} className="radio-types">
+          <div ref={radioRef} className="radio-types mb-8">
             <h3>Radio buttons</h3>
             <RadioButton variant="normal" label="Radio" name="radio" />
             <RadioButton variant="hover" label="Hover" name="radio" />
@@ -398,7 +398,7 @@ export default function ElementsLayout() {
               name="disabled"
             />
           </div>
-          <div ref={toggleRef} className="toggle-types">
+          <div ref={toggleRef} className="toggle-types mb-8">
             <h3>Toggles</h3>
             <Toggle label="Toggle" />
             <Toggle label="Hover" hover={true} />

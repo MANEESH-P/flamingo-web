@@ -3,18 +3,21 @@
   min-height: 100vh;
   .foundations {
     // flex-grow: 4;
+    margin-left: 20vw;
     width: 80vw;
     background: #f0f3f8;
   }
 }
 .nav {
   //   flex-grow: 1;
+  position: fixed;
   width: 20vw;
   display: flex;
   justify-content: center;
   margin-top: 6rem;
   h4 {
     font-weight: bold;
+    cursor: pointer;
   }
 }
 
@@ -56,4 +59,13 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .foundation-layout .foundations {
+    margin-left: 0;
+
+    width: 100vw;
+    // padding: 2rem;
+  }
 }

@@ -1,7 +1,7 @@
 import React from "react";
 
 export default function Navbar(props) {
-  const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop);
+  const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop - 90);
 
   return (
     <div className="nav">

@@ -13,7 +13,10 @@ import Avatar from "../../Components/Avatar/Avatar";
 import ListItem from "../../Components/ListItem/ListItem";
 import Navbar from "../../Components/Navbar/Navbar";
 
-const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop - 32);
+const scrollToRef = (ref) => {
+  // let top = ref.current.offsetTop - 32;
+  window.scrollTo(0, ref.current.offsetTop - 32);
+};
 
 function openNav() {
   document.getElementById("myNav").style.width = "100%";

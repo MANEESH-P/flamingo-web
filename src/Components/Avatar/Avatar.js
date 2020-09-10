@@ -3,7 +3,7 @@ import React from "react";
 
 export default function Avatar(props) {
   return (
-    <div className={`avatar--${props.size}`}>
+    <div className={`avatar avatar--${props.size}`}>
       {props.img ? (
         <img
           className={`avatar ${props.margin} shadow--b-2`}

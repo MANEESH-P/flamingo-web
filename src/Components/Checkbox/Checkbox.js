@@ -6,7 +6,6 @@ export default function Checkbox(props) {
     if (props.indeterminate) {
       let checkbox = document.getElementById(props.label);
       checkbox.indeterminate = true;
-      console.log(checkbox);
     }
   });
   return (

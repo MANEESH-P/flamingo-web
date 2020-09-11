@@ -28,8 +28,7 @@
   .theme-toggle {
     position: absolute;
     top: 40px;
-    left: 50px;
-    width: 200px;
+    right: 50px;
   }
 }
 
@@ -110,10 +109,12 @@ footer {
     overflow: hidden;
 
     .header__left {
+      flex-basis: 100vw;
       margin-top: 4rem;
       margin-bottom: 3rem;
     }
     .header__right {
+      flex-basis: 100vw;
       img {
         margin: auto;
       }
@@ -131,7 +132,7 @@ footer {
       margin-top: 0;
     }
     .theme-toggle {
-      left: 30px;
+      right: 30px;
     }
   }
   .avatar-section {

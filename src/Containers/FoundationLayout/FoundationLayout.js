@@ -69,6 +69,9 @@ export default function FoundationLayout() {
           >
             03.Shadows
           </p>
+          <Link to="/demo">
+            <p>Demo Page</p>
+          </Link>
         </div>
       </div>
       <div className="foundations pl-12 pt-8 pb-8 pr-8">

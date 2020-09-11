@@ -164,6 +164,9 @@ export default function ElementsLayout() {
           >
             09.Avatars
           </p>
+          <Link to="/demo">
+            <p>Demo Page</p>
+          </Link>
         </div>
       </div>
 

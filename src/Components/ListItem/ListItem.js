@@ -4,7 +4,7 @@ import { ReactComponent as ArrowLight } from "../../Assets/Union-medium.svg";
 
 export default function ListItem(props) {
   return (
-    <div className={`list-item ${props.variant} mr-4 mb-4 shadow--b-1`}>
+    <div className={`list-item ${props.variant} ${props.margin} shadow--b-1`}>
       <div className="list-item__icon">{props.icon}</div>
       <div>
         <div className="list-item__title">

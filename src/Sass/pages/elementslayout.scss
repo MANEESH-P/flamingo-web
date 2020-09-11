@@ -55,7 +55,7 @@
   flex-wrap: wrap;
 }
 
-.inner-container div {
+.inner-container > div {
   flex: 1 0 250px;
 }
 /* .container Button,

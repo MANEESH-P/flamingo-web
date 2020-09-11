@@ -1,6 +1,7 @@
 .toggle-container {
   // margin-top: 1rem;
   position: relative;
+  text-align: left;
 }
 
 .switch {
@@ -13,6 +14,9 @@
     opacity: 0;
     width: 0;
     height: 0;
+    &:hover {
+      @include hover;
+    }
     &:checked + .slider {
       background-color: $brand-primary;
     }
@@ -35,7 +39,7 @@
 
     &:not(:checked) + .slider:after {
       position: absolute;
-      right: 9px;
+      right: 6px;
       top: calc(50% - 17px / 2 - 0.5px);
       height: 17px;
       font-size: 12px;
@@ -117,9 +121,9 @@
 .slider.round {
   border-radius: 24px;
   border: 1px solid $element-tertiary;
-  // &:hover {
-  //   border: 1px solid $element-secondary;
-  // }
+  &:hover {
+    border: 1px solid $element-secondary;
+  }
   &.hover {
     border: 1px solid $element-secondary;
   }
@@ -131,9 +135,9 @@
 .slider.disabled {
   // background: $element-inactive;
   @include disabled;
-  // &:hover {
-  //   border: 1px solid $element-tertiary;
-  // }
+  &:hover {
+    border: 1px solid $element-tertiary;
+  }
 }
 
 .slider.checked {
@@ -145,11 +149,11 @@
 
 .label {
   position: absolute;
-  top: 0;
+  top: 2px;
   left: 70px;
   right: 0;
   bottom: 0;
-
+  cursor: pointer;
   color: $text-primary;
   font-size: 14px;
 }

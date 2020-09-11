@@ -10,7 +10,7 @@ export default function Button(props) {
         props.type
       } ${props.loading ? "btn--loading" : ""} ${
         props.active ? "btn--active" : ""
-      } ${props.hover ? "btn--hover" : ""} mr-6`}
+      } ${props.hover ? "btn--hover" : ""} ${props.margin} ${props.shadow}`}
     >
       {props.loading ? (
         <Loading />

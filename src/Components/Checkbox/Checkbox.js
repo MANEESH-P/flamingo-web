@@ -4,24 +4,24 @@ import React, { useEffect } from "react";
 export default function Checkbox(props) {
   useEffect(() => {
     if (props.indeterminate) {
-      let checkbox = document.getElementById(props.label);
+      let checkbox = document.getElementById(`checkbox-${props.label}`);
       checkbox.indeterminate = true;
     }
   });
   return (
-    <div className="checkbox-container mt-4 ">
+    <div className={`checkbox-container ${props.margin}`}>
       <input
         readOnly={props.checked}
         checked={props.checked}
         type="checkbox"
-        id={props.label}
+        id={`checkbox-${props.label}`}
         disabled={props.disabled}
       />
       <label
         className={`checkbox checkbox--${props.variant} ${
           props.hover ? "hover" : ""
         } ${props.checked ? "checked" : ""}`}
-        htmlFor={props.label}
+        htmlFor={`checkbox-${props.label}`}
       >
         <span>{props.label}</span>
       </label>

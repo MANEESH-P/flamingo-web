@@ -83,7 +83,8 @@
 }
 
 .radiobutton-container {
-  display: block;
+  display: flex;
+  align-items: center;
   position: relative;
   padding-left: 35px;
   // margin-top: 1rem;
@@ -120,12 +121,8 @@
     }
   }
   &:hover {
-    input {
-      ~ {
-        .checkmark {
-          //   border: 1px solid $element-secondary;
-        }
-      }
+    .checkmark {
+      @include hover;
     }
   }
   .checkmark {
@@ -139,13 +136,16 @@
       background: white;
     }
   }
+
+  .hover {
+    @include hover;
+  }
+
   .disabled {
-    border: 1px solid $element-tertiary;
+    &:hover {
+      border: 1px solid $element-tertiary;
+    }
     // background: $element-inactive;
     @include disabled;
-  }
-  .hover {
-    // border: 1px solid $element-secondary;
-    @include hover;
   }
 }

@@ -1,0 +1,167 @@
+.demo-container {
+  min-height: 100vh;
+  width: 100vw;
+}
+
+.header {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  // flex-wrap: wrap;
+  // justify-content: center;
+  align-content: center;
+  align-items: center;
+  .header__left {
+    flex-basis: 50vw;
+  }
+  .header__right {
+    flex-basis: 50vw;
+    img {
+      width: 100%;
+      display: block;
+      height: auto;
+    }
+  }
+  p {
+    text-align: justify;
+  }
+  .theme-toggle {
+    position: absolute;
+    top: 40px;
+    left: 50px;
+    width: 200px;
+  }
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+section {
+  text-align: center;
+  .section__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    div {
+      flex: 1;
+    }
+    p {
+      text-align: justify;
+    }
+    .section__left {
+      text-align: left;
+    }
+  }
+}
+
+.section-checkbox {
+  display: flex;
+  justify-content: center;
+  div {
+    flex-basis: 100px;
+  }
+}
+
+.avatar-section {
+  background: #f0f3f8;
+}
+
+.contact {
+  background: #f0f3f8;
+  display: flex;
+  flex-wrap: wrap;
+  .contact__left {
+    flex: 4;
+  }
+  .contact__right {
+    flex: 1;
+    text-align: center;
+  }
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+footer {
+  background: $element-tertiary;
+  display: flex;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 676px) {
+  .header,
+  .avatar-section,
+  .listitem-section,
+  .listitem-section__right,
+  .contact,
+  .contact__left {
+    padding: 0;
+  }
+
+  .header {
+    // display: block;
+    flex-wrap: wrap;
+    // align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+    .header__left {
+      margin-top: 4rem;
+      margin-bottom: 3rem;
+    }
+
+    padding: 2rem;
+    margin-bottom: 3rem;
+    button {
+      margin-left: 0;
+    }
+    .wrapper {
+      margin-bottom: 0;
+    }
+    .input-container {
+      margin-top: 0;
+    }
+    .theme-toggle {
+      left: 30px;
+    }
+  }
+  .avatar-section {
+    h1 {
+      margin-top: 3rem;
+      margin-bottom: 4rem;
+    }
+    padding: 1rem;
+    .avatar-card {
+      flex-basis: 250px;
+    }
+  }
+  .listitem-section {
+    h1 {
+      margin-bottom: 0;
+    }
+    .listitem-section__right {
+      padding: 2.5rem;
+    }
+  }
+  .contact {
+    padding: 2rem;
+    h1 {
+      text-align: center;
+    }
+    p {
+      text-align: justify;
+    }
+    .contact__left {
+      margin-top: 3rem;
+    }
+    .contact__right {
+      margin-top: 4rem;
+      margin-bottom: 2rem;
+      padding: 0 1.5rem;
+    }
+  }
+}

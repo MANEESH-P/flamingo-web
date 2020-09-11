@@ -3,14 +3,17 @@ import React from "react";
 
 export default function RadioButton(props) {
   return (
-    <label class="radiobutton-container mt-4" htmlFor={props.label}>
+    <label
+      class={`radiobutton-container ${props.margin}`}
+      htmlFor={`radio-${props.label}`}
+    >
       {props.label}
       <input
         type="radio"
         checked={props.checked}
         disabled={props.disabled}
         name={props.name}
-        id={props.label}
+        id={`radio-${props.label}`}
       />
       <span
         className={`checkmark radio ${props.variant}  ${

@@ -7,7 +7,7 @@ import { ReactComponent as Dragger } from "../../Assets/dragger.svg";
 
 export default function TextArea(props) {
   return (
-    <div className="textarea-container mb-6 mr-6 ">
+    <div className={`textarea-container ${props.margin}`}>
       {props.variant === "error" ? (
         <span className="alert-icon">
           <Alert />

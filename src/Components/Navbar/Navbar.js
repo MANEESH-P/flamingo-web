@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Navbar(props) {
   const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop - 90);
@@ -17,6 +18,7 @@ export default function Navbar(props) {
             </h4>
           );
         })}
+        <Link to="/demo">Demo</Link>
       </nav>
     </div>
   );

@@ -1,13 +1,13 @@
 import React from "react";
 // import "./select.scss";
-import { ReactComponent as Arrow } from "../../Assets/select.svg";
 
 export default function Select(props) {
   return (
-    <div className="select-container">
+    <div className={`select-container ${props.margin}`}>
       <select
         disabled={props.variant === "disabled"}
         className={`select select--${props.variant}`}
+        id={`select--${props.variant}`}
       >
         {props.options.map((item, index) => {
           return (
@@ -17,7 +17,9 @@ export default function Select(props) {
           );
         })}
       </select>
-      <Arrow />
+      {/* <label for={`select--${props.variant}`}>
+        <Arrow />
+      </label> */}
     </div>
   );
 }

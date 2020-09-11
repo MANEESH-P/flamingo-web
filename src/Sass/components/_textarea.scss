@@ -2,22 +2,32 @@
   position: relative;
   // margin-right: 1.5rem;
   // margin-bottom: 1.5rem;
-  // width: 288px;
+  width: 288px;
   // height: 150px;
 }
 
 .textarea {
-  width: 288px;
+  width: 100%;
   height: 150px;
   background: $element-primary;
   border: 1px solid $element-tertiary;
   box-sizing: border-box;
   border-radius: 24px;
   outline: none;
-  text-indent: 16px;
+  padding-left: 16px;
   padding-top: 16px;
   padding-right: 16px;
   margin: 0;
+  resize: vertical;
+}
+
+textarea {
+  &:focus {
+    @include active;
+    &:hover {
+      @include active;
+    }
+  }
 }
 
 .textarea-container {
@@ -43,6 +53,11 @@ textarea::placeholder {
   font-size: 16px;
   color: $text-secondary;
 }
+.textarea {
+  &:hover {
+    @include hover;
+  }
+}
 .textarea--normal {
   border: 1px solid $element-tertiary;
 }
@@ -55,18 +70,30 @@ textarea::placeholder {
 .textarea--active {
   // border: 2px solid $element-secondary;
   @include active;
+  &:hover {
+    @include active;
+  }
 }
 
 .textarea--success {
   // border: 1px solid $element-success;
   @include success;
+  &:hover {
+    @include success;
+  }
 }
 
 .textarea--error {
   // border: 1px solid $element-error;
   @include error;
+  &:hover {
+    @include error;
+  }
 }
 
 .textarea--disabled {
   background: $element-inactive;
+  &:hover {
+    border: 1px solid $element-tertiary;
+  }
 }

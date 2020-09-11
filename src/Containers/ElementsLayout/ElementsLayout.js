@@ -187,19 +187,49 @@ export default function ElementsLayout() {
         <div className="container">
           <div className="primary-buttons mr-1 mb-8">
             <h3 className="mb-2">Primary</h3>
-            <Button variant="primary" type="default" label="Label"></Button>
-            <Button variant="primary" type="outline" label="Label"></Button>
-            <Button variant="primary" type="minimal" label="Label"></Button>
+            <Button
+              variant="primary"
+              type="default"
+              label="Label"
+              margin="mr-6"
+            ></Button>
+            <Button
+              variant="primary"
+              type="outline"
+              label="Label"
+              margin="mr-6"
+            ></Button>
+            <Button
+              variant="primary"
+              type="minimal"
+              label="Label"
+              margin="mr-6"
+            ></Button>
           </div>
           <div className="secondary-buttons mr-1 mb-8">
             <h3 className="mb-2">Secondary</h3>
-            <Button variant="secondary" type="default" label="Label"></Button>
-            <Button variant="secondary" type="outline" label="Label"></Button>
-            <Button variant="secondary" type="minimal" label="Label"></Button>
+            <Button
+              variant="secondary"
+              type="default"
+              label="Label"
+              margin="mr-6"
+            ></Button>
+            <Button
+              variant="secondary"
+              type="outline"
+              label="Label"
+              margin="mr-6"
+            ></Button>
+            <Button
+              variant="secondary"
+              type="minimal"
+              label="Label"
+              margin="mr-6"
+            ></Button>
           </div>
           <div className="icon-buttons mr-1 mb-8">
             <h3 className="mb-2">Icons</h3>
-            <Button variant="icon" label={<Icon />}></Button>
+            <Button variant="icon" label={<Icon />} margin="mr-6"></Button>
           </div>
         </div>
         <h3 className="mb-4">States</h3>
@@ -213,6 +243,7 @@ export default function ElementsLayout() {
                 label="Label"
                 hover={true}
                 loading={false}
+                margin="mr-6"
               ></Button>
               <Button
                 variant="primary"
@@ -220,12 +251,14 @@ export default function ElementsLayout() {
                 active={true}
                 label="Label"
                 loading={false}
+                margin="mr-6"
               ></Button>
               <Button
                 variant="primary"
                 type="default"
                 label="Label"
                 loading={true}
+                margin="mr-6"
               ></Button>
             </div>
           </div>
@@ -238,6 +271,7 @@ export default function ElementsLayout() {
                 label="Label"
                 hover={true}
                 loading={false}
+                margin="mr-6"
               ></Button>
               <Button
                 variant="secondary"
@@ -245,26 +279,43 @@ export default function ElementsLayout() {
                 label="Label"
                 active={true}
                 loading={false}
+                margin="mr-6"
               ></Button>
               <Button
                 variant="secondary"
                 type="default"
                 label="Label"
                 loading={true}
+                margin="mr-6"
               ></Button>
             </div>
           </div>
           <div className="success mb-8">
             <h3 className="mb-2">Success</h3>
-            <Button variant="success" type="default" label="Label"></Button>
+            <Button
+              variant="success"
+              type="default"
+              label="Label"
+              margin="mr-6"
+            ></Button>
           </div>
           <div className="Error mb-8">
             <h3 className="mb-2">Error</h3>
-            <Button variant="error" type="default" label="Label"></Button>
+            <Button
+              variant="error"
+              type="default"
+              label="Label"
+              margin="mr-6"
+            ></Button>
           </div>
           <div className="Disable mb-8">
             <h3 className="mb-2">Disable</h3>
-            <Button variant="disabled" type="default" label="Label"></Button>
+            <Button
+              variant="disabled"
+              type="default"
+              label="Label"
+              margin="mr-6"
+            ></Button>
           </div>
         </div>
         <h2 ref={inputsRef} className="mb-4">
@@ -274,34 +325,63 @@ export default function ElementsLayout() {
           <div className="input-types">
             <h3 className="mb-2">Types</h3>
             <div className="inputs">
-              <Input type="text" variant="normal" placeholder="Normal" />
+              <Input
+                type="text"
+                variant="normal"
+                placeholder="Normal"
+                margin="mr-6 mb-6"
+              />
               <Input
                 type="text"
                 variant="hover"
                 hover={true}
                 placeholder="Hover"
+                margin="mr-6 mb-6"
               />
               <Input
                 type="text"
                 variant="active"
                 active={true}
                 placeholder="Active"
+                margin="mr-6 mb-6"
               />
-              <Input type="text" variant="error" placeholder="Error" />
-              <Input type="text" variant="success" placeholder="Success" />
+              <Input
+                type="text"
+                variant="error"
+                placeholder="Error"
+                margin="mr-6 mb-6"
+              />
+              <Input
+                type="text"
+                variant="success"
+                placeholder="Success"
+                margin="mr-6 mb-6"
+              />
               <Input
                 type="text"
                 variant="disabled"
                 disabled={true}
                 placeholder="Disabled"
+                margin="mr-6 mb-6"
               />
               <Input
                 type="password"
                 variant="password"
                 placeholder="********"
+                margin="mr-6 mb-6"
               />
-              <Input type="date" variant="date" placeholder="dd/mm/yy" />
-              <Input type="text" variant="search" placeholder="Search" />
+              <Input
+                type="date"
+                variant="date"
+                placeholder="dd/mm/yy"
+                margin="mr-6 mb-6"
+              />
+              <Input
+                type="text"
+                variant="search"
+                placeholder="Search"
+                margin="mr-6 mb-6"
+              />
             </div>
           </div>
         </div>
@@ -316,20 +396,24 @@ export default function ElementsLayout() {
                 <Select
                   variant="normal"
                   options={["normal", "one", "two", "three"]}
+                  margin="mr-6 mb-6"
                 />
                 <Select
                   variant="hover"
                   options={["hover", "one", "two", "three"]}
+                  margin="mr-6 mb-6"
                 />
               </div>
               <div>
                 <Select
                   variant="active"
                   options={["active", "one", "two", "three"]}
+                  margin="mr-6 mb-6"
                 />
                 <Select
                   variant="disabled"
                   options={["disable", "one", "two", "three"]}
+                  margin="mr-6 mb-6"
                 />
               </div>
             </div>
@@ -342,12 +426,36 @@ export default function ElementsLayout() {
           <div className="textarea-types">
             <h3 className="mb-2">Types</h3>
             <div className="textareas">
-              <TextArea variant="normal" placeholder="Normal" />
-              <TextArea variant="hover" placeholder="Hover" />
-              <TextArea variant="active" placeholder="Active" />
-              <TextArea variant="error" placeholder="Error" />
-              <TextArea variant="success" placeholder="Success" />
-              <TextArea variant="disabled" placeholder="Disable" />
+              <TextArea
+                variant="normal"
+                placeholder="Normal"
+                margin="mr-6 mb-6"
+              />
+              <TextArea
+                variant="hover"
+                placeholder="Hover"
+                margin="mr-6 mb-6"
+              />
+              <TextArea
+                variant="active"
+                placeholder="Active"
+                margin="mr-6 mb-6"
+              />
+              <TextArea
+                variant="error"
+                placeholder="Error"
+                margin="mr-6 mb-6"
+              />
+              <TextArea
+                variant="success"
+                placeholder="Success"
+                margin="mr-6 mb-6"
+              />
+              <TextArea
+                variant="disabled"
+                placeholder="Disable"
+                margin="mr-6 mb-6"
+              />
             </div>
           </div>
         </div>
@@ -355,43 +463,68 @@ export default function ElementsLayout() {
         <div ref={checkboxRef} className="inner-container ">
           <div className="checkbox-types mb-8">
             <h3>Checkboxes</h3>
-            <Checkbox variant="normal" label="checkbox" />
-            <Checkbox variant="hover" label="hover" />
-            <Checkbox variant="selected" label="selected" checked={true} />
-            <Checkbox variant="disabled" label="disable" disabled={true} />
+            <Checkbox variant="normal" label="checkbox" margin="mt-4" />
+            <Checkbox variant="hover" label="hover" margin="mt-4" />
+            <Checkbox
+              variant="selected"
+              label="selected"
+              checked={true}
+              margin="mt-4"
+            />
+            <Checkbox
+              variant="disabled"
+              label="disable"
+              disabled={true}
+              margin="mt-4"
+            />
             <Checkbox
               variant="undetermined"
               label="undetermined"
               indeterminate={true}
+              margin="mt-4"
             />
             <Checkbox
               variant="disable-selected"
               label="disable selected"
               disabled={true}
               checked={true}
+              margin="mt-4"
             />
             <Checkbox
               variant="disable-undetermined"
               label="disable undetermined"
               disabled={true}
               indeterminate={true}
+              margin="mt-4"
             />
           </div>
           <div ref={radioRef} className="radio-types mb-8">
             <h3>Radio buttons</h3>
-            <RadioButton variant="normal" label="Radio" name="radio" />
-            <RadioButton variant="hover" label="Hover" name="radio" />
+            <RadioButton
+              variant="normal"
+              label="Radio"
+              name="radio"
+              margin="mt-4"
+            />
+            <RadioButton
+              variant="hover"
+              label="Hover"
+              name="radio"
+              margin="mt-4"
+            />
             <RadioButton
               variant="selected"
               label="Selected"
               checked={true}
               name="selected"
+              margin="mt-4"
             />
             <RadioButton
               variant="disable"
               label="Disable"
               disabled={true}
               name="disabled"
+              margin="mt-4"
             />
             <RadioButton
               variant="disable-selected"
@@ -399,15 +532,31 @@ export default function ElementsLayout() {
               disabled={true}
               checked={true}
               name="disabled"
+              margin="mt-4"
             />
           </div>
           <div ref={toggleRef} className="toggle-types mb-8">
             <h3>Toggles</h3>
-            <Toggle label="Toggle" />
-            <Toggle label="Hover" hover={true} />
-            <Toggle label="Checked" checked={true} name="checked" />
-            <Toggle label="Disable OFF" disabled={true} checked={false} />
-            <Toggle label="Disable ON" disabled={true} checked={true} />
+            <Toggle label="Toggle" margin="mt-4" />
+            <Toggle label="Hover" hover={true} margin="mt-4" />
+            <Toggle
+              label="Checked"
+              checked={true}
+              name="checked"
+              margin="mt-4"
+            />
+            <Toggle
+              label="Disable OFF"
+              disabled={true}
+              checked={false}
+              margin="mt-4"
+            />
+            <Toggle
+              label="Disable ON"
+              disabled={true}
+              checked={true}
+              margin="mt-4"
+            />
           </div>
         </div>
         {/* </div> */}
@@ -415,20 +564,37 @@ export default function ElementsLayout() {
           <div ref={listitemRef}>
             <h2 className="mb-4">List Items</h2>
             <div className="list-items">
-              <ListItem variant="default" title="Item" value="Value" />
-              <ListItem variant="sub-item" title="Sub Item" value="Value" />
-              <ListItem variant="tiny-item" title="Tiny Item" value="Value" />
+              <ListItem
+                variant="default"
+                title="Item"
+                value="Value"
+                margin="mr-4 mb-4"
+              />
+              <ListItem
+                variant="sub-item"
+                title="Sub Item"
+                value="Value"
+                margin="mr-4 mb-4"
+              />
+              <ListItem
+                variant="tiny-item"
+                title="Tiny Item"
+                value="Value"
+                margin="mr-4 mb-4"
+              />
               <ListItem
                 variant="subtitle"
                 title="Item"
                 subtitle="Subtitle"
                 value="Value"
+                margin="mr-4 mb-4"
               />
               <ListItem
                 variant="icon"
                 icon={<Icon />}
                 title="Item"
                 value="Value"
+                margin="mr-4 mb-4"
               />
               <ListItem
                 variant="icon subtitle"
@@ -436,6 +602,7 @@ export default function ElementsLayout() {
                 title="Item"
                 subtitle="Subtitle"
                 value="Value"
+                margin="mr-4 mb-4"
               />
             </div>
           </div>

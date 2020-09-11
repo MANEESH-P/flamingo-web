@@ -106,12 +106,17 @@ footer {
     // display: block;
     flex-wrap: wrap;
     // align-items: center;
-    justify-content: center;
+    // justify-content: center;
     overflow: hidden;
 
     .header__left {
       margin-top: 4rem;
       margin-bottom: 3rem;
+    }
+    .header__right {
+      img {
+        margin: auto;
+      }
     }
 
     padding: 2rem;

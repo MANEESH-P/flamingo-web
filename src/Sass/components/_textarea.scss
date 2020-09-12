@@ -21,7 +21,7 @@
   resize: vertical;
 }
 
-textarea {
+.textarea {
   &:focus {
     @include active;
     &:hover {
@@ -45,6 +45,7 @@ textarea {
 }
 
 ::-webkit-resizer {
+  background-color: transparent;
   display: none;
 }
 
@@ -81,6 +82,12 @@ textarea::placeholder {
   &:hover {
     @include success;
   }
+  &:focus {
+    @include success;
+    &:hover {
+      @include success;
+    }
+  }
 }
 
 .textarea--error {
@@ -88,6 +95,12 @@ textarea::placeholder {
   @include error;
   &:hover {
     @include error;
+  }
+  &:focus {
+    @include error;
+    &:hover {
+      @include error;
+    }
   }
 }
 

@@ -164,6 +164,9 @@ export default function ElementsLayout() {
           >
             09.Avatars
           </p>
+          <Link to="/">
+            <p>Foundations</p>
+          </Link>
           <Link to="/demo">
             <p>Demo Page</p>
           </Link>
@@ -174,9 +177,6 @@ export default function ElementsLayout() {
         <div>
           <header className="mb-4">
             <h1>Elements</h1>
-            <Link to="/">
-              <span>Foundations</span>
-            </Link>
           </header>
           <p className="mb-16 text-secondary">
             Here’s the collection of Atomic elements for Flamingo Web. These

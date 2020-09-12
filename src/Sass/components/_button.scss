@@ -1,7 +1,5 @@
 .btn {
-  // width: 67px;
-  // height: 36px;
-  padding: 9px 15px;
+  padding: 9px 20px;
   border-radius: 250px;
   font-family: "Open Sans";
   font-style: normal;
@@ -19,23 +17,18 @@
 .btn--primary-default {
   background: $brand-primary;
   color: $text-white;
-  // border: 1px solid $brand-primary;
 
   &:active {
     background: $brand-primary;
-    // width: 72px;
   }
   &.btn--hover {
     background: $brand-primary-light;
-    // width: 72px;
   }
   &.btn--loading {
-    // width: 68px;
-    padding: 9px 34px;
+    padding: 9px 39px;
   }
   &.btn--active {
     background: $brand-primary;
-    // width: 72px;
   }
   &:hover {
     background: $brand-primary-light;
@@ -46,7 +39,7 @@
   background: #ffffff;
   color: $brand-primary;
   border: 1px solid $brand-primary;
-  padding: 8px 14px;
+  padding: 8px 20px;
 }
 
 .btn--primary-minimal {
@@ -59,16 +52,13 @@
   color: #ffffff;
 
   &:active {
-    // width: 72px;
     background: $brand-secondary;
   }
   &.btn--hover {
-    // width: 72px;
     background: $brand-secondary-light;
   }
 
   &.btn--active {
-    // width: 72px;
     background: $brand-secondary;
   }
   &:hover {
@@ -79,14 +69,14 @@
 .btn--loading,
 .btn--success,
 .btn--error {
-  padding: 18px 34px;
+  padding: 18px 39px;
 }
 
 .btn--secondary-outline {
   background: #ffffff;
   color: $brand-secondary;
   border: 1px solid $brand-secondary;
-  padding: 8px 14px;
+  padding: 8px 20px;
 }
 
 .btn--secondary-minimal {
@@ -111,7 +101,7 @@
 
 .btn--icon {
   padding: 18px;
-  background: #ffffff;
+  background: $element-primary;
 }
 
 .btn svg {
@@ -122,4 +112,31 @@
 
 .buttons {
   display: flex;
+}
+
+/* Ripple effect */
+.btn {
+  background-position: center;
+  transition: background 0.8s;
+}
+.btn--primary-default:hover {
+  background: $brand-primary-light
+    radial-gradient(circle, transparent 1%, $brand-primary-light 1%)
+    center/15000%;
+}
+.btn--primary-default:active {
+  background-color: $brand-primary;
+  background-size: 100%;
+  transition: background 0s;
+}
+
+.btn--seondary-default:hover {
+  background: $brand-secondary-light
+    radial-gradient(circle, transparent 1%, $brand-secondary-light 1%)
+    center/15000%;
+}
+.btn--secondary-default:active {
+  background-color: $brand-secondary;
+  background-size: 100%;
+  transition: background 0s;
 }

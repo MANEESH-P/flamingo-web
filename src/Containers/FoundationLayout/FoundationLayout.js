@@ -69,6 +69,9 @@ export default function FoundationLayout() {
           >
             03.Shadows
           </p>
+          <Link to="/elements">
+            <p>Elements</p>
+          </Link>
           <Link to="/demo">
             <p>Demo Page</p>
           </Link>
@@ -78,9 +81,6 @@ export default function FoundationLayout() {
         <div>
           <header>
             <h1 className="mb-4">Foundations</h1>
-            <Link className="mb-4" to="/elements">
-              <span>Elements</span>
-            </Link>
           </header>
           <p className="mb-16 text-secondary">
             Here’s the very basic for Flamingo Web, either being color variables

@@ -28,3 +28,12 @@
 html {
   scroll-behavior: smooth;
 }
+
+input,
+textarea,
+button,
+select,
+a,
+label {
+  -webkit-tap-highlight-color: transparent;
+}

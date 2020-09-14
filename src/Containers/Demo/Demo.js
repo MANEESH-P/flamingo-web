@@ -24,6 +24,7 @@ export default function Demo() {
     <div className="demo-container">
       <header className="header pl-16 pr-16">
         <div className="header__left">
+          <h1 className="brand">Flamingo Web</h1>
           <h1 className="mb-6">
             We made this Page. <br /> Any big heading goes here!
           </h1>

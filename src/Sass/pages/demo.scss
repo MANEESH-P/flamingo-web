@@ -32,6 +32,11 @@
   }
 }
 
+.brand {
+  color: $brand-primary;
+  font-size: 50px;
+}
+
 .wrapper {
   display: flex;
   flex-wrap: wrap;

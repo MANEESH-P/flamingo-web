@@ -94,28 +94,28 @@ export default function FoundationLayout() {
           <h3 className="mb-4">Brand</h3>
           <div className="brand mr-1">
             <Color name="brand-primary" value="#FF2773" />
-            <Color name="brand-primary-light" value="#FF2773" />
-            <Color name="brand-secondary" value="#FF2773" />
-            <Color name="brand-secondary-light" value="#FF2773" />
+            <Color name="brand-primary-light" value="#FF4d95;" />
+            <Color name="brand-secondary" value="#2B1E70" />
+            <Color name="brand-secondary-light" value="#252D9B" />
           </div>
           <h3 className="mb-4">UI Text</h3>
           <div className="ui-text mr-1">
-            <Color name="text-primary" value="#FF2773" />
-            <Color name="text-secondary" value="#FF2773" />
-            <Color name="text-tertiary" value="#FF2773" />
-            <Color name="text-success" value="#FF2773" />
-            <Color name="text-error" value="#FF2773" />
-            <Color name="text-white" value="#FF2773" />
+            <Color name="text-primary" value="#190134" />
+            <Color name="text-secondary" value="#685879" />
+            <Color name="text-tertiary" value="#B3ABBC" />
+            <Color name="text-success" value="#5CC689" />
+            <Color name="text-error" value="#EE7D52" />
+            <Color name="text-white" value="#FFFFFF" />
             <Color name="text-link" value="#FF2773" />
           </div>
           <h3 className="mb-4">UI Element</h3>
           <div className="ui-element mr-1">
-            <Color name="element-primary" value="#FF2773" />
-            <Color name="element-secondary" value="#FF2773" />
-            <Color name="element-tertiary" value="#FF2773" />
-            <Color name="element-success" value="#FF2773" />
-            <Color name="element-error" value="#FF2773" />
-            <Color name="element-overlay" value="#FF2773" />
+            <Color name="element-primary" value="#FFFFFF" />
+            <Color name="element-secondary" value="#685879" />
+            <Color name="element-tertiary" value="#B3ABBC" />
+            <Color name="element-success" value="#5CC689" />
+            <Color name="element-error" value="#EE7D52" />
+            <Color name="element-overlay" value="#2B1E70 Opacity: 80%" />
           </div>
         </div>
         <h2 ref={typographyRef} className="mb-6">
